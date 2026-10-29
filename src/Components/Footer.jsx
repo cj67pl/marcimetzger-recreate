@@ -30,16 +30,16 @@ function Footer() {
                             Your next chapter starts in Pahrump Valley.
                         </p>
                         <div className="social-links">
-                            <a href="#" aria-label="Facebook">
+                            <a href="https://web.facebook.com/MarciHomes/?_rdc=1&_rdr#" aria-label="Facebook">
                                 <FontAwesomeIcon icon={faFacebookF} />
                             </a>
-                            <a href="#" aria-label="Instagram">
+                            <a href="https://www.instagram.com/marcimetzger_theridge/" aria-label="Instagram">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
-                            <a href="#" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/marci-metzger-30642496/" aria-label="LinkedIn">
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
-                            <a href="#" aria-label="Yelp">
+                            <a href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump" aria-label="Yelp">
                                 <FontAwesomeIcon icon={faYelp} />
                             </a>
                         </div>
