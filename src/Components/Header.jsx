@@ -10,7 +10,7 @@ function Header() {
 
             <nav className="main-nav" aria-label="Main navigation">
                 <a href="#home">Find a home</a>
-                <a href="#properties">Buy and sell</a>
+                <a href="#services">Services</a>
                 <a href="#about">Gallery</a>
                 <a href="#contact">About Marci</a>
                 <a href="#contact">Contact</a>

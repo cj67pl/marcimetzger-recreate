@@ -8,6 +8,7 @@ import resort from '../assets/gallery/resort.webp';
 import golfcourse from '../assets/gallery/golfcourse.jpeg';
 import valley from '../assets/gallery/valley.jpeg';
 import sunlit from '../assets/gallery/sunlit.jpg';
+import modern from '../assets/gallery/modern.png';
 
 const galleryItems = [
     {
@@ -16,12 +17,12 @@ const galleryItems = [
         category: 'Homes',
         type: 'Luxury Homes',
     },
-    // {
-    //     image: "desert",
-    //     title: 'Desert Mountain Home',
-    //     category: 'Homes',
-    //     type: 'Residential',
-    // },
+    {
+        image: desert,
+        title: 'Desert Mountain Home',
+        category: 'Homes',
+        type: 'Residential',
+    },
     {
         image: resort,
         title: 'Resort-Style Living',
@@ -46,12 +47,12 @@ const galleryItems = [
         category: 'Homes',
         type: 'Neighborhoods',
     },
-    // {
-    //     image: '/assets/d8c56d831fae090886007c4732050bbb.jpg',
-    //     title: 'Bright Living Space',
-    //     category: 'Interiors',
-    //     type: 'Interior Design',
-    // },
+    {
+        image: modern,
+        title: 'Modern Home, Mountain Views',
+        category: 'Homes',
+        type: 'Neighborhoods',
+    },
     {
         image: sunlit,
         title: 'Sunlit Retreat',
