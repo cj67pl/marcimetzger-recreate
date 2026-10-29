@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 function Top() {
     return (
    
-        <section id="top" className="top-section">
+        <section  className="top-section" id="home" >
             <div className="top-bg">
                 <img src={bgPhoto} className="kb" alt="Pond and fountain with Spring Mountains beyond, Pahrump Valley" />
             </div>

@@ -12,10 +12,22 @@
 
   --radius-border: 999px;
   --radius-card: 14px;
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
 }
- 
+
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
 }
 
 html {
@@ -28,6 +40,13 @@ body {
   color: var(--color-text);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+
+  min-width: 320px;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1,
