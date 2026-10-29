@@ -1335,23 +1335,33 @@ main {
 /* hamburger button: hidden on desktop */
 .menu-toggle {
     display: none;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
     background: transparent;
-    border: 1px solid #d4ae62;
-    border-radius: 4px;
-    padding: 9px;
     cursor: pointer;
 }
 
 .menu-toggle span {
     display: block;
-    width: 23px;
+    width: 22px;
     height: 2px;
-    margin: 5px 0;
-    background: #0b2545;
-    transition: 0.2s ease;
+    margin: 5px auto;
+    background: var(--color-primary);
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* mobile and tablet navigation */
+.mobile-contact-button {
+    display: none;
+}
+
+.desktop-contact-button {
+    display: inline-flex;
+}
+
 
 
 
@@ -1456,6 +1466,17 @@ main {
 }
 
 
+@media (max-width: 380px) {
+    .site-header {
+        padding-inline: 12px;
+    }
+
+    .logo {
+        height: 34px;
+        max-width: 155px;
+    }
+}
+
 
 @media (max-width: 480px) {
 
@@ -1477,45 +1498,6 @@ main {
     .about-logos img {
         height: 30px;
         max-width: 85px;
-    }
-    .header-inner {
-        position: relative;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-    }
-
-    .main-nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 10px 20px;
-        background: #f5f0e6;
-        border: 1px solid #e4dccb;
-        box-shadow: 0 10px 20px rgba(11, 37, 69, 0.12);
-    }
-
-    .main-nav.is-open {
-        display: flex;
-    }
-
-    .main-nav a {
-        display: block;
-        padding: 13px 8px;
-        border-bottom: 1px solid #e4dccb;
-    }
-
-    .main-nav a:last-child {
-        border-bottom: none;
-
     }
 }
 
@@ -1605,25 +1587,11 @@ main {
     }
 
     
+    
 }
 
 @media (max-width: 760px) {
-    .site-header {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .main-nav {
-        order: 3;
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .contact-button {
-        margin-left: auto;
-    }
-
+    
     .top-section {
         min-height: 680px;
     }
@@ -1728,6 +1696,104 @@ main {
     .footer-main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 40px;
+    }
+
+    /* .logo {
+        height: 40px;
+        max-width: 180px;
+    }
+
+    .desktop-contact-button {
+        display: none;
+    } */
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: nowrap !important;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        min-height: 76px;
+        padding: 10px 16px;
+    }
+
+    .site-header .brand {
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .site-header .logo {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 42px;
+        object-fit: contain;
+    }
+
+    .site-header .desktop-contact-button {
+        display: none !important;
+    }
+
+    .site-header .menu-toggle {
+        display: flex !important;
+        flex: 0 0 44px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+        padding: 8px;
+        border: 1px solid #e4dccb;
+        border-radius: 6px;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .site-header .menu-toggle span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        margin: 0;
+        background: #0b2545;
+    }
+
+    .site-header .main-nav {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 20px 20px;
+        background: #fbf8f2;
+        border-bottom: 1px solid #e4dccb;
+        box-shadow: 0 10px 20px rgba(11, 37, 69, 0.12);
+    }
+
+    .site-header .main-nav.is-open {
+        display: flex !important;
+    }
+
+    .site-header .main-nav>a:not(.mobile-contact-button) {
+        padding: 14px 4px;
+        border-bottom: 1px solid #e4dccb;
+    }
+
+    .site-header .main-nav .mobile-contact-button {
+        display: inline-flex;
+        align-self: stretch;
+        justify-content: center;
+        margin-top: 14px;
+        min-height: 48px;
     }
 }
 
