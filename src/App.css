@@ -1304,6 +1304,32 @@ main {
 }
 
 
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: #f5f0e6;
+    border: 1px solid rgba(245, 240, 230, 0.3);
+    border-radius: 50%;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.social-links a:hover {
+    color: #0b2545;
+    background-color: #d4ae62;
+}
+
 
 /* animations */
 

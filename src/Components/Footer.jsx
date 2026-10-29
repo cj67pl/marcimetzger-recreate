@@ -1,9 +1,15 @@
-import logo from '../assets/logo.png';
-import equalhousing from '../assets/about/equalhousing.png';
+import logo from '../assets/logo-white.png';
+import equalhousing from '../assets/about/equal-housing-opportunity-white.png';
 import pahrumpvalley from '../assets/about/pahrumpvalley.jpeg';
 import realtor from '../assets/about/realtor.webp';
 import theridge from '../assets/about/theridge.png';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faFacebookF,
+    faInstagram,
+    faLinkedinIn,
+    faYelp,
+} from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
     return (
@@ -23,6 +29,20 @@ function Footer() {
                             Local knowledge. Personal service.
                             Your next chapter starts in Pahrump Valley.
                         </p>
+                        <div className="social-links">
+                            <a href="#" aria-label="Facebook">
+                                <FontAwesomeIcon icon={faFacebookF} />
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                            </a>
+                            <a href="#" aria-label="Yelp">
+                                <FontAwesomeIcon icon={faYelp} />
+                            </a>
+                        </div>
                     </div>
 
                     <div className="footer-links">
